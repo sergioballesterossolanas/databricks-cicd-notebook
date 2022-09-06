@@ -40,4 +40,5 @@ jobs:
       - name: Deploy integration test
         run: |
           databricks jobs configure --version=2.1
+          databricks jobs list
           # databricks jobs run-now --job-id 209109410450072
