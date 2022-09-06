@@ -1,8 +1,11 @@
 # Databricks notebook source
-def my_func():
-  print("Hello world!")
-  return True
+from funcs import my_func
+my_func()
 
 # COMMAND ----------
 
-my_func()
+
+
+# COMMAND ----------
+
+

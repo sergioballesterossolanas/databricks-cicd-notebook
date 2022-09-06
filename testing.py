@@ -1,11 +1,9 @@
 # Databricks notebook source
-import sys
-import os
-sys.path.append(os.path.abspath('.'))
+from funcs import my_func
 
 # COMMAND ----------
 
-from main import my_func
+assert my_func() == True
 
 # COMMAND ----------
 
