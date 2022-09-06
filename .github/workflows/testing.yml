@@ -40,7 +40,7 @@ jobs:
       - name: Deploy integration test
         run: |
           echo "[DEFAULT]" > ~/.databrickscfg
-          echo $DATABRICKS_HOST >> ~/.databrickscfg
+          echo ${{ secrets.DATABRICKS_HOST }} >> ~/.databrickscfg
           #echo $DATABRICKS_TOKEN >> ~/.databrickscfg
           databricks jobs configure --version=2.1
           # cat  ~/.databrickscfg
