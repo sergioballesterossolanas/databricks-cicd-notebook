@@ -1,2 +1,8 @@
 # Databricks notebook source
-print("hello world6!")
+def my_func():
+  print("Hello world!")
+  return True
+
+# COMMAND ----------
+
+my_func()
